@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 2023 Movies vs. Top Movies of All Time</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chroma-js@2.1.0"></script>
+
+    <!-- Adding styles for the title and text -->
+    <style>
+        h1 {
+            text-align: center;
+            font-size: 28px; /* Adjust the font size */
+            font-family: 'Verdana'; /* Specify the font family */
+            font-weight: bold; /* Make the title bold */
+            color: #6A5ACD; /* Set the color using hex code */
+            margin-bottom: 80px; /* Add margin at the bottom */
+        }
+
+        .first-line {
+            font-size: 18px; 
+            font-family: 'Verdana';
+            font-weight: bold; 
+            color: #6A5ACD; 
+        }
+
+        .second-line {
+            font-size: 14px; 
+            font-family: 'Verdana';
+        }
+    </style>
+</head>
+<body>
+    <!-- Title at the top of the page -->
+    <h1>Top 2023 Movies vs. Top Movies of All Time</h1>
+
+    <!-- Plain text before Scatter plot -->
+    <p class="first-line">Scatter Plot:</p>
+    <p class="second-line">Description of Scatter Plot...</p>
+    <div id="myScatter" style="width: 100%; height: 400px; margin-bottom: 50px;"></div>
+
+    <!-- Plain text before Pie chart -->
+    <p class="first-line">Pie Chart:</p>
+    <p class="second-line">Description of Pie Chart...</p>
+    <div style="margin-bottom: 50px;">
+        <canvas id="myPie" width="300" height="300"></canvas>
+    </div>
+
+    <!-- Plain text before Bubble chart -->
+    <p class="first-line">Bubble Chart:</p>
+    <p class="second-line">Description of Bubble Chart...</p>
+    <div style="margin-bottom: 50px;">
+        <canvas id="myBubble" width="400" height="400"></canvas>
+    </div>
+
+    <!-- Plain text before Bar chart -->
+    <p class="first-line">Bar Chart:</p>
+    <p class="second-line">Description of Bar Chart...</p>
+    <div id="myBar" style="width: 100%; height: 400px; margin-bottom: 50px;"></div>
+
+    <!-- Include your JS files -->
+    <script src="GrossVsTheaters_ScatterPlot.js"></script>
+    <script src="TopDistributorsDistribution_Pie.js"></script>
+    <script src="DistributorVsGross_Bubble.js"></script>
+    <script src="Top2023VsAllTime_Bar.js"></script>
+</body>
+</html>
